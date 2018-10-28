@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Css 3 Course => Flex Box => Parent => Flex Direction, Flex Wrap</title>
+    <style media="screen">
+          *{
+            box-sizing: border-box;
+          }
+          body{
+            /*perspective: 1000px;*/
+             /*direction: rtl;*/
+          }
+          .container
+          {
+            width: 800px;
+            margin: 50px auto;
+            background-color: #EEE;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+          }
+          .container div
+          {
+            background: #080;
+            color: #FFF;
+            width: 400px;
+            height: 100px;
+            margin: 5px;
+            padding: 10px;
+          }
+
+    </style>
+  </head>
+  <body>
+     <div class="container">
+         <div class="">
+             Div 1
+         </div>
+
+         <div class="">
+            Div 2
+         </div>
+
+         <div class="">
+            Div 3
+         </div>
+
+     </div>
+
+  </body>
+</html>

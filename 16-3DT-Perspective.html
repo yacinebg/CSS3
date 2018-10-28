@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<title>CSS 3 Course => 3D Transform - Perspective </title>
+
+			<style>
+        *{
+          box-sizing: border-box;
+         }
+
+        div
+        {
+          margin: 50px 0 100px;
+        }
+
+        /* Perspective Origin : X . Y */
+
+        div:first-of-type {perspective: 800px; perspective-origin: 0 0;}
+        div:nth-of-type(2) {perspective: 600px; perspective-origin: 50% 0;}
+        div:last-of-type {perspective: 400px; perspective-origin: center ;}
+
+
+        img{
+            display: block;
+            margin: 50px auto;
+            transition:all .5s ease-in-out;
+            transform: translateZ(100px);
+        }
+
+
+        img:hover{
+
+
+        }
+
+
+			</style>
+		</head>
+		<body>
+
+      <div class="">
+        <img src="http://stuffpoint.com/cats/image/178173-cats-cutie.jpg" alt="cat">
+      </div>
+      <div class="">
+        <img src="http://stuffpoint.com/cats/image/178173-cats-cutie.jpg" alt="cat">
+      </div>
+      <div class="">
+        <img src="http://stuffpoint.com/cats/image/178173-cats-cutie.jpg" alt="cat">
+      </div>
+		</body>
+	</html>

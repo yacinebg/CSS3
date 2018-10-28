@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<title>CSS 3 Course => Transform - Skew </title>
+			<link rel='stylesheet' href='' />
+
+      <style>
+           *{
+             -webkit-box-sizing: border-box;
+           }
+           .container{
+             width: 400px;
+             background-color: #EEE;
+             margin: 100px auto;
+             padding: 10px;
+             border: 1px solid #DDD;
+             height: 200px;
+           }
+           .skew{
+             background-color: #080;
+             color: #FFF;
+             text-align: center;
+             height: 180px;
+             transition:all .5s ease-in-out;
+           }
+           .skew:hover{
+             -webkit-transform: skewY(40deg) scale(1,2) translate(50px,100px);
+             transform: skewY(40deg) scale(1,2) translate(50px,80px);
+           }
+
+      </style>
+
+		</head>
+		<body>
+			<div class="container">
+			     <div class="skew">This Is 2d transform skew()</div>
+			</div>
+		</body>
+	</html>

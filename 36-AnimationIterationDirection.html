@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animation =>  Iteration Count , Direction</title>
+    <style media="screen">
+       * {
+         box-sizing: border-box;
+       }
+       body {  }
+
+       div
+       {
+          width: 200px;
+          height: 200px;
+          top: 10px;
+          left: 10px;
+          margin: 50px auto;
+          background-color: #F00;
+          position: absolute;
+          animation-name: moving;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate-reverse;
+
+       }
+
+       @keyframes moving {
+
+           0%
+           {
+              top : 500px;
+
+           }
+
+           20%
+           {
+             top : 90px;
+
+           }
+
+           30%
+           {
+             top : 260px;
+
+           }
+
+           40%
+           {
+             top : 210px;
+           }
+           50%
+           {
+             top : 150px;
+           }
+           60%
+           {
+             top : 320px;
+           }
+           70%
+           {
+             top : 190px;
+           }
+           80%
+           {
+             top : 160px;
+           }
+           90%
+           {
+             top : 220px;
+           }
+
+           100%
+           {
+             top : 280px;
+           }
+
+       }
+
+    </style>
+  </head>
+  <body>
+      <div class="">
+
+      </div>
+  </body>
+</html>

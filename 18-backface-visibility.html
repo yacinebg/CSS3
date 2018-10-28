@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<title>CSS 3 Course => 3D Transform  - Backface Visiblity </title>
+
+			<style>
+        *{
+          box-sizing: border-box;
+         }
+
+         body
+         {
+           perspective: 500px
+         }
+
+        .father
+        {
+          width: 300px;
+          height: 300px;
+          margin: 50px auto;
+          position: relative;
+          transition: all .5s ease-in-out;
+          transform-style: preserve-3d;
+        }
+        .father:hover
+         {
+           transform: rotateY(180deg);
+         }
+
+         .father > div {
+           position: absolute;
+           left :0;
+           top:0;
+           width: 100%;
+           height: 100%;
+           line-height: 300px;
+           color: #FFF;
+           font-size: 30px;
+           text-align: center;
+         }
+
+        .front
+        {
+           z-index: 2;
+           background-color: #F00;
+           /*transform: rotateX(180px);*/
+           backface-visibility: hidden;
+
+         }
+        .back
+        {
+           z-index: 1;
+           background-color: #00F;
+          transform: rotateY(180deg);
+          backface-visibility: hidden;
+
+        }
+
+
+			</style>
+		</head>
+		<body>
+
+      <div class="father">
+                <div class="front">
+                    Bienvenu
+                </div>
+                <div class="back">
+                   à  TechnoSkillsPro
+                </div>
+       </div>
+
+
+		</body>
+	</html>

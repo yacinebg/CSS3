@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animation => Keyframe ans what Can Animation Do</title>
+    <style media="screen">
+       * {
+         box-sizing: border-box;
+       }
+       body {  }
+
+       div
+       {
+          width: 200px;
+          height: 200px;
+          margin: 50px auto;
+          background-color: #F00;
+          position: absolute;
+          animation: moving 5s 5 linear;
+       }
+
+       @keyframes moving {
+
+           0%
+           {
+              top : 0;
+              left: 0;
+           }
+
+           25%
+           {
+             top : 0;
+             left: 200px;
+           }
+
+           50%
+           {
+             top : 200px;
+             left: 200px;
+             background-color: #00a0a0;
+             border-radius: 50%;
+           }
+
+           75%
+           {
+             top : 200px;
+             left: 0;
+           }
+
+           100%
+           {
+             top : 0;
+             left: 0;
+           }
+
+       }
+
+    </style>
+  </head>
+  <body>
+      <div class="">
+
+      </div>
+  </body>
+</html>

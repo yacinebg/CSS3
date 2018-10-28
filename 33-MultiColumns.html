@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 Course => Multi Columns => Count, Gap , Rule , width , Span , Short Code</title>
+    <style media="screen">
+      *{
+         box-sizing: border-box;
+      }
+
+      div{
+        border: 1px solid #CCC;
+        padding: 10px;
+        -webkit-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 100px;
+        column-gap:100px;
+
+        /*-webkit-column-rule : <Width> | <Style> | <Color>  ;*/
+
+        /* Shorthand */
+        /*-webkit-column-rule : 4px solid #080;
+        column-rule : 4px solid #080;*/
+
+        /* detailllll */
+        /*-webkit-column-rule-width : 2px;
+        column-rule-width: 2px ;
+        -webkit-column-rule-style : solid;
+        column-rule-style: solid ;
+        -webkit-column-rule-color : #080;
+        column-rule-color: #080 ;*/
+
+        /*-webkit-column-width :200px;
+        column-width: 200px;*/
+
+        -webkit-columns: 200px 4;
+        columns: 200px 4;
+      }
+
+      div h2
+      {
+        -webkit-column-span : all ;
+        column-span: all  ;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="">
+        <h2>TechnoSkillspro</h2>
+          Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+      </div>
+
+  </body>
+</html>

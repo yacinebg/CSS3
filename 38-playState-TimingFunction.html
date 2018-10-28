@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animation => Play State , Timinig Function</title>
+    <style media="screen">
+       * {
+         box-sizing: border-box;
+       }
+       body {  }
+
+       div
+       {
+          width: 200px;
+          height: 200px;
+          top: 10px;
+          left: 10px;
+          margin: 50px auto;
+          background-color: #F00;
+          color: #FFF;
+          position: absolute;
+          animation-name: moving;
+          animation-duration: 5s;
+          animation-iteration-count: 1;
+          animation-direction: normal;
+          animation-delay: .5s;
+          animation-fill-mode: normal;
+          animation-play-state: paused;
+
+       }
+
+       @keyframes moving {
+
+           0%
+           {
+              top : 10px;
+           }
+
+           100%
+           {
+             top : 280px; background-color: #00a0a0;
+           }
+
+       }
+
+    </style>
+  </head>
+  <body>
+      <div class="">
+
+      </div>
+  </body>
+</html>

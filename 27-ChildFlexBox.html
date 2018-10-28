@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Css 3 Course => Flex Box => Child => Order , Flex Grow , Flex Shrink</title>
+    <style media="screen">
+          *{
+            box-sizing: border-box;
+          }
+          body{
+            /*perspective: 1000px;*/
+             /*direction: rtl;*/
+          }
+          .container
+          {
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            background-color: #EEE;
+            padding: 10px;
+            display: flex;
+
+          }
+          .container div
+          {
+            color: #FFF;
+            width: 150px;
+            padding: 10px;
+            max-height: 100px;
+            /*flex-grow:0*/
+            flex-shrink: 1
+
+          }
+
+          .container  .one{ background-color: #080; }
+          .container  .two{ background-color: #F00; }
+          .container  .three{ background-color: #00F; flex-shrink: 1}
+          .container  .four{ background-color: #F0F;flex-shrink: 5}
+
+
+
+    </style>
+  </head>
+  <body>
+     <div class="container">
+         <div class="one">Div 1</div>
+         <div class="two">Div 2</div>
+         <div class="three">Div 3</div>
+         <div class="four">Div 4</div>
+
+     </div>
+
+  </body>
+</html>
